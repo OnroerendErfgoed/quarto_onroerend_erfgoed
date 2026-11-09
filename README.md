@@ -19,6 +19,8 @@ quarto add onroerenderfgoed/quarto_onroerend_erfgoed
 
 ## Gebruik
 
+### Huisstijl toevoegen aan een projecten
+
 Voeg de extensie toe in de `_quarto.yml` van je Quarto project.
 
  `_quarto.yml`:
@@ -26,7 +28,6 @@ Voeg de extensie toe in de `_quarto.yml` van je Quarto project.
 ```yaml
 project:
   type: website
-  
 format: onroerend-erfgoed-html
 ```
 
@@ -38,6 +39,54 @@ onroerend_erfgoed-html formaat (toc, code-fold, navbar, ...):
 format:
   onroerend-erfgoed-html:
     toc: true
+```
+
+### Globale header
+
+Er is een apart formaat (`onroerend-erfgoed-html+header` voor
+het geval je ook de Vlaamse header en footer
+moet toevoegen. Dit formaat voorziet extra witruimte, zodat je in
+je profielen de header en footer kan insluiten.
+
+```yaml
+project:
+  type: website
+format: onroerend-erfgoed-html+header
+```
+
+Het includen van de header kan dan in een profiel
+per omgeving:
+
+`_quarto_local.yml`
+
+```yaml
+format:
+  html:
+    include-in-header:
+      - text: |
+         <script src="https://tni.widgets.burgerprofiel.dev-vlaanderen.be/api/v1/node_modules/@govflanders/vl-widget-polyfill/dist/index.js"> </script>
+         <script src="https://tni.widgets.burgerprofiel.dev-vlaanderen.be/api/v1/node_modules/@govflanders/vl-widget-client/dist/index.js"> </script>
+    include-before-body:
+      - text: |
+          <div id="global-header"><script src="https://tni.widgets.burgerprofiel.dev-vlaanderen.be/api/v1/widget/{{UUID}}/embed"> </script>
+          </div>
+    include-after-body:
+      - text: |
+          <div id="global-footer-vlaanderen"><script src=https://tni.widgets.burgerprofiel.dev-vlaanderen.be/api/v1/widget/{{UUID}}/embed></script></div>
+
+  dashboard:
+    include-in-header:
+      - text: |
+         <script src="https://tni.widgets.burgerprofiel.dev-vlaanderen.be/api/v1/node_modules/@govflanders/vl-widget-polyfill/dist/index.js"> </script>
+         <script src="https://tni.widgets.burgerprofiel.dev-vlaanderen.be/api/v1/node_modules/@govflanders/vl-widget-client/dist/index.js"> </script>
+    include-before-body:
+      - text: |
+          <div id="global-header"><script src="https://tni.widgets.burgerprofiel.dev-vlaanderen.be/api/v1/widget/{{UUID}}/embed"> </script>
+          </div>
+    include-after-body:
+      - text: |
+          <div id="global-footer-vlaanderen"><script src=https://tni.widgets.burgerprofiel.dev-vlaanderen.be/api/v1/widget/{{UUID}}/embed></script></div>
+
 ```
 
 ## Logo en favicon

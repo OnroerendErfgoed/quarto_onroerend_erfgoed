@@ -1,0 +1,9 @@
+// extra room for the global header
+
+#quarto-header {
+  top: 43px;
+}
+
+#quarto-content {
+  margin-top: 43px;
+}

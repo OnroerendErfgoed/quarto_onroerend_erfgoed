@@ -14,7 +14,7 @@ $callout-color-note: rgb(148, 78, 161);
 
 // Fonts
 $font-family-sans-serif: "Flanders Art Sans", Arial, sans-serif;
-$font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-size-root: 1rem;
 $h1-font-size: rem-calc(44);
 $h2-font-size: rem-calc(37);
@@ -27,12 +27,12 @@ $h5-font-size: rem-calc(18);
 // toc
 $toc-color: rgb(148, 78, 161);
 $toc-font-size: 0.9em;
-$toc-active-border: rgb(148, 78, 161); 	
+$toc-active-border: rgb(148, 78, 161);
 
 //navbar
 $navbar-bg: rgb(148, 78, 161);
 $navbar-fg: rgb(255, 255, 255);
-$navbar-hl: rgb(255,255, 255);
+$navbar-hl: rgb(255, 255, 255);
 $navbar-brand-bg: rgb(245, 245, 245);
 $navbar-brand-font-size: 1rem;
 $navbar-padding-x: 0;
@@ -47,7 +47,7 @@ $nav-tabs-link-active-color: rgb(148, 78, 161);
 $link-hover-color: darken($link-color, 15%) !default;
 
 //layout
-$content-padding-top: 2rem; 
+$content-padding-top: 2rem;
 $margin-sidebar-padding: 1rem;
 
 /*-- scss:rules --*/
@@ -57,15 +57,15 @@ $margin-sidebar-padding: 1rem;
 // resolve next to the copied css in the rendered output.
 
 #quarto-header {
-      border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
 }
 
 .sidebar {
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
   padding: 1rem;
   margin-top: 1rem;
   height: fit-content;
-  
+
 }
 
 .quarto-dashboard .toolbar {
@@ -73,59 +73,64 @@ $margin-sidebar-padding: 1rem;
 }
 
 .navbar-logo {
-      max-height: 60px;
-      min-height: 60px;
-      object-fit: cover;
-      margin-right: 1em;
-      background-color: #FFFFFF;
-      padding-top: 0.2rem;
-      padding-bottom: 0.2rem;
-      padding-right: 2.5rem;
-      clip-path: polygon(-1px 0px, 87% 0, 100% 100%, -1px 100%);
-    }
+  max-height: 60px;
+  min-height: 60px;
+  object-fit: cover;
+  margin-right: 1em;
+  background-color: #FFFFFF;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-right: 2.5rem;
+  clip-path: polygon(-1px 0px, 87% 0, 100% 100%, -1px 100%);
+}
 
 .navbar-brand-container {
-     background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 .navbar-title {
-    color: rgb(148, 78, 161);
-    padding-left: 1em;
-    font-weight: bold;
+  color: rgb(148, 78, 161);
+  padding-left: 1em;
+  font-weight: bold;
 }
 
 
-#quarto-header > nav.navbar {
-    padding-left: 0;
+#quarto-header>nav.navbar {
+  padding-left: 0;
 }
 
-#quarto-header > nav.navbar > div.container-fluid {
-    padding-left: 0 !important;
+#quarto-header>nav.navbar>div.container-fluid {
+  padding-left: 0 !important;
 }
 
-.navbar-brand-container {
-        }   
-  .navbar-brand-logo{
-      order:2;
-      background-color: rgb(148, 78, 161);
-      margin-right: 0px !important;
-  }
+.navbar-brand-container {}
+
+.navbar-brand-logo {
+  order: 2;
+  background-color: rgb(148, 78, 161);
+  margin-right: 0px !important;
+}
 
 .btn:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
   cursor: pointer;
 }
+
 .btn-default {
-  --bs-btn-color:  rgb(102, 102, 102);
+  --bs-btn-color: rgb(102, 102, 102);
   --bs-btn-bg: rgb(244, 237, 246);
   --bs-btn-border-color: #dee2e6;
   --bs-btn-hover-color: #FFFFFF;
   --bs-btn-hover-bg: rgb(148, 78, 161);
-  --bs-btn-hover-border-color:  rgb(148, 78, 161);
+  --bs-btn-hover-border-color: rgb(148, 78, 161);
   --bs-btn-focus-shadow-rgb: 189, 192, 196;
   --bs-btn-active-color: #FFFFFF;
   --bs-btn-active-bg: rgb(148, 78, 161);
@@ -152,22 +157,24 @@ ul.pagination li.active a {
   color: rgb(148, 78, 161);
 }
 
-ul.pagination li.disabled a{
-  color:  rgb(102, 102, 102);;
+ul.pagination li.disabled a {
+  color: rgb(102, 102, 102);
+  ;
 }
 
 .content {
   background-color: #FFFFFF;
   padding: 2rem;
 }
+
 .card {
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
 }
 
 .oe-content-header {
   padding: 0 1rem 0 1rem;
   border: 1px solid #d5d5d5;
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
 }
 
 .tab-pane {
@@ -178,65 +185,62 @@ body {
   --bs-body-font-size: 14px;
 }
 
-.observablehq > form {
+.observablehq>form {
   max-width: 100% !important;
 }
 
 .oe-force-row {
-  display: grid !important; 
+  display: grid !important;
   grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr) !important;
   grid-auto-columns: minmax(0, 1fr) !important;
 }
 
-.oe-extra-info-list{
+.oe-extra-info-list {
   padding: 1em;
   margin-bottom: 3em;
 }
 
-.callout.callout-style-simple > div.callout-header {
+.callout.callout-style-simple>div.callout-header {
   flex-direction: row;
 }
 
-.callout.callout-style-simple > div.callout-header > div.callout-title-container,
-.callout.callout-style-simple > div.callout-header > div.callout-icon-container,
-.callout.callout-style-simple > div.callout-header > div.callout-btn-toggle
-{
-    flex: initial;
+.callout.callout-style-simple>div.callout-header>div.callout-title-container,
+.callout.callout-style-simple>div.callout-header>div.callout-icon-container,
+.callout.callout-style-simple>div.callout-header>div.callout-btn-toggle {
+  flex: initial;
 }
 
-.gt_table, .gt_title, .gt_col_heading, .gt_group_heading, 
-.gt_summary_row, .gt_grand_summary_row, .gt_footnote {
-    font-family: "Flanders Art Sans", Arial, sans-serif !important;
-    color: rgb(102, 102, 102) !important;
+.gt_table,
+.gt_title,
+.gt_col_heading,
+.gt_group_heading,
+.gt_summary_row,
+.gt_grand_summary_row,
+.gt_footnote {
+  font-family: "Flanders Art Sans", Arial, sans-serif !important;
+  color: rgb(102, 102, 102) !important;
 }
+
 .gt_stub.gt_row {
-    padding-left: 2rem !important;
+  padding-left: 2rem !important;
 }
 
-.gt_summary_row{
-    font-style: italic !important;
+.gt_summary_row {
+  font-style: italic !important;
 }
 
-.gt_grand_summary_row{
-    font-weight: bold !important;
+.gt_grand_summary_row {
+  font-weight: bold !important;
 }
 
 .gt_stub.gt_row.gt_grand_summary_row {
-    padding-left: 5px !important;
+  padding-left: 5px !important;
 }
 
 .gt_group_heading {
-    font-weight: bold !important;
+  font-weight: bold !important;
 }
 
-#quarto-dashboard-header{
+#quarto-dashboard-header {
   display: none;
-}
-
-#quarto-header {
-  top:43px;
-}
-
-#quarto-content {
-  margin-top:43px;
 }
