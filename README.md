@@ -21,7 +21,7 @@ quarto add onroerenderfgoed/quarto_onroerend_erfgoed
 
 ### Huisstijl toevoegen aan een projecten
 
-Voeg de extensie toe in de `_quarto.yml` van je Quarto project.
+Om de huisstijl te gebruiken, gebruik je een van de custom formaten in de `_quarto.yml` van je Quarto project.
 
  `_quarto.yml`:
 
@@ -31,9 +31,9 @@ project:
 format: onroerend-erfgoed-html
 ```
 
-Het format is een extensie van het html format. Opties voor het
+Het formaat is een extensie van het html format. Opties voor het
 html formaat zijn dus ook geldig voor het
-onroerend_erfgoed-html formaat (toc, code-fold, navbar, ...):
+onroerend-erfgoed-html formaat (toc, code-fold, navbar, ...):
 
 ```yaml
 format:
