@@ -1,2 +1,6 @@
-logo:
-  small: logo.svg
+logo: 
+  images:
+    oe-logo: 
+      path: ./logo.svg
+      alt: "Onroerend Erfgoed logo"
+  small: oe-logo

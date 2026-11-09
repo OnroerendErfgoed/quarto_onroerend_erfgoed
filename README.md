@@ -43,15 +43,8 @@ format:
 ## Logo en favicon
 
 De extensie bevat een `_brand.yml` dat het logo als standaard instelt.
-Voeg onderstaande regel toe aan de `_quarto.yml` om het logo en de
+Het logo en de favicon worden automatisch mee geladen.om het logo en de
 favicon automatisch te gebruiken:
-
-```yaml
-brand: "_extensions/onroerenderfgoed/onroerend-erfgoed/_brand.yml"
-```
-
-Quarto gebruikt dan `logo.svg` standaard als favicon en in de navbar,
-zonder verdere configuratie.
 
 Wil je toch een aparte favicon of logo gebruiken, dan kan je die
 rechtstreeks configureren:
@@ -60,10 +53,6 @@ rechtstreeks configureren:
 website:
   favicon: "_extensions/onroerenderfgoed/onroerend-erfgoed/favicon.ico"
 ```
-
-De favicon uit de brand is een svg. Voor maximale compatibiliteit met
-oudere browsers kan je de meegeleverde `favicon.ico` gebruiken zoals
-hierboven.
 
 ## Structuur van de extensie
 
