@@ -15,3 +15,7 @@ New features
  - Verwijder stadaard extra witruimte voor de globale header
  - Voeg extra formaat toe `html+header`, dat wel witruimte voorziet
    voor de Vlaamse globale header 
+
+# v.0.3.2
+
+ - fix extension.yml
