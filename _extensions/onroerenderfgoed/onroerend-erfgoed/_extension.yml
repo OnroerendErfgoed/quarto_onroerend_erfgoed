@@ -1,7 +1,7 @@
 name: onroerend-erfgoed
 title: Onroerend Erfgoed Theme
 author: Maarten Vermeyen
-version: 0.3.2
+version: 0.3.3
 quarto-required: ">=1.10.0"
 contributes:
   metadata:
