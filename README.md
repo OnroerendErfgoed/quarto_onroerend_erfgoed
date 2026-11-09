@@ -45,27 +45,41 @@ onroerend_erfgoed-html formaat (toc, code-fold, navbar, ...):
 
 ```yaml
 format:
-  onroerend_erfgoed-html:
+  onroerend-erfgoed-html:
     toc: true
 ```
 
 ## Logo en favicon
 
-De meegeleverde `logo.svg` en `favicon.ico` kunnen rechtstreeks
-gebruikt worden:
+De extensie bevat een `_brand.yml` dat het logo als standaard instelt.
+Voeg onderstaande regel toe aan de `_quarto.yml` om het logo en de
+favicon automatisch te gebruiken:
+
+```yaml
+brand: "_extensions/onroerenderfgoed/onroerend-erfgoed/_brand.yml"
+```
+
+Quarto gebruikt dan `logo.svg` standaard als favicon en in de navbar,
+zonder verdere configuratie.
+
+Wil je toch een aparte favicon of logo gebruiken, dan kan je die
+rechtstreeks configureren:
 
 ```yaml
 website:
   favicon: "_extensions/onroerenderfgoed/onroerend-erfgoed/favicon.ico"
-  navbar:
-    logo: "_extensions/onroerenderfgoed/onroerend-erfgoed/logo.svg"
 ```
+
+De favicon uit de brand is een svg. Voor maximale compatibiliteit met
+oudere browsers kan je de meegeleverde `favicon.ico` gebruiken zoals
+hierboven.
 
 ## Structuur van de extensie
 
 ```
 _extensions/onroerenderfgoed/onroerend-erfgoed/
 ├── _extension.yml   # metadata voor het onroerend-erfgoed-html formaat
+├── _brand.yml       # standaard logo (favicon en navbar)
 ├── theme.scss       # bootstrap variable overrides en custom CSS regels
 ├── fonts.css        # @font-face Flanders Art Sans
 ├── logo.svg         # Onroerend Erfgoed logo
