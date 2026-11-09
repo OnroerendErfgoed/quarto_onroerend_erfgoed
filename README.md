@@ -19,15 +19,6 @@ quarto add onroerenderfgoed/quarto_onroerend_erfgoed
 
 ## Gebruik
 
-Voeg de extensie toe in de YAML header van een document:
-
-```yaml
----
-title: "Mijn document"
-format: onroerend-erfgoed-html
----
-```
-
 Voeg de extensie toe in de `_quarto.yml` van je Quarto project.
 
  `_quarto.yml`:
@@ -86,3 +77,9 @@ _extensions/onroerenderfgoed/onroerend-erfgoed/
 ├── favicon.ico      # Onroerend Erfgoed favicon
 └── fonts/           # Flanders Art Sans Regular (woff, ttf, eot, svg)
 ```
+
+## Hergebruik
+
+Het gebruik van de huisstijl, het logo en de fonts zijn enkel toegelaten
+in het kader van projecten van Onroerend Erfgoed. Deze elementen zijn expliciet
+uitgesloten van de licentievoorwaarden onder de EUPL-1.2.
