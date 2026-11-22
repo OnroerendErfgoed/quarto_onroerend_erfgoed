@@ -1,6 +1,55 @@
-logo: 
+meta:
+  name: Onroerend Erfgoed
+  link:
+    home: https://www.onroerenderfgoed.be/
+
+logo:
   images:
-    oe-logo: 
+    oe-logo:
       path: ./logo.svg
       alt: "Onroerend Erfgoed logo"
   small: oe-logo
+
+color:
+  palette:
+    # Brand colors (aligned with theme.scss)
+    purple: "#944EA1"        # Onroerend Erfgoed primary (headings, navbar, TOC, callouts)
+    blue: "#0075DB"         # Hyperlinks
+    gray: "#666666"         # Body text
+    gray-light: "#F5F5F5"   # Page background
+    gray-border: "#D5D5D5"  # Header/borders
+    purple-tint: "#F4EDF6"  # Default button background
+    white: "#FFFFFF"
+
+  # Semantic colors
+  primary: purple
+  secondary: gray
+  foreground: gray
+  background: gray-light
+  info: blue
+  light: white
+
+typography:
+  fonts:
+    - family: Flanders Art Sans
+      source: file
+      files:
+        - path: fonts/FlandersArtSans-Regular.woff
+          weight: 400
+          style: normal
+        - path: fonts/FlandersArtSans-Regular.ttf
+          weight: 400
+          style: normal
+
+  base:
+    family: Flanders Art Sans
+    weight: 400
+    size: 14px
+
+  headings:
+    family: Flanders Art Sans
+    color: purple
+
+  link:
+    color: blue
+    decoration: underline

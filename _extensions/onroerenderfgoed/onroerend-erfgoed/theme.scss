@@ -52,9 +52,9 @@ $margin-sidebar-padding: 1rem;
 
 /*-- scss:rules --*/
 
-// The Flanders Art Sans @font-face rules with bundled font files live in
-// fonts.css (loaded via the format's `css:` key) so that the font urls
-// resolve next to the copied css in the rendered output.
+// The Flanders Art Sans font files are registered by _brand.yml
+// (typography.fonts with source: file); Quarto copies them next to the
+// rendered output and generates the @font-face rules in the brand CSS.
 
 #quarto-header {
   border-bottom: 1px solid #d5d5d5;

@@ -1,3 +1,11 @@
+# v1.1.0
+
+ - Vulp `_brand.yml` aan met de merkkleuren (paars, blauw, grijstinten) en
+   semantische roltoewijzingen (primary, foreground, background, ...)
+ - Registreer Flanders Art Sans rechtstreeks in `_brand.yml`
+   (`typography.fonts` met `source: file`) en verwijder het afzonderlijke
+   `fonts.css` met de `@font-face` regels
+
 # v0.1.0
 
 New features
