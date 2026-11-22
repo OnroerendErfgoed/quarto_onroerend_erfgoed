@@ -1,6 +1,74 @@
-logo: 
+meta:
+  name: Onroerend Erfgoed
+  link:
+    home: https://www.onroerenderfgoed.be/
+
+logo:
   images:
-    oe-logo: 
+    oe-logo:
       path: ./logo.svg
       alt: "Onroerend Erfgoed logo"
   small: oe-logo
+
+color:
+  palette:
+    # Brand colors (aligned with theme.scss)
+    purple: "#944EA1"        # Onroerend Erfgoed primary (headings, navbar, TOC, callouts)
+    blue: "#0075DB"         # Hyperlinks
+    gray: "#666666"         # Body text
+    gray-light: "#F5F5F5"   # Page background
+    gray-border: "#D5D5D5"  # Header/borders
+    purple-tint: "#F4EDF6"  # Default button background
+    white: "#FFFFFF"
+
+  # Semantic colors
+  primary: purple
+  secondary: gray
+  foreground: gray
+  background: gray-light
+  info: blue
+  light: white
+
+# Quarto/Bootstrap variables that need a specific brand color (Quarto maps
+# body-bg, body-color, link-color etc. automatically from the semantic
+# colors, but toc, navbar, callout and tab colors are wired here).
+defaults:
+  bootstrap:
+    defaults:
+      callout-color-note: $brand-purple
+      toc-color: $brand-purple
+      toc-active-border: $brand-purple
+      # Hover color the old theme.scss derived as darken($link-color, 15%);
+      # keep it identical instead of Bootstrap's default link-hover shift.
+      link-hover-color: darken($link-color, 15%)
+      navbar-bg: $brand-purple
+      navbar-fg: $brand-white
+      navbar-hl: $brand-white
+      navbar-brand-bg: $brand-gray-light
+      nav-tabs-link-active-color: $brand-purple
+      input-bg: $brand-white
+
+typography:
+  fonts:
+    - family: Flanders Art Sans
+      source: file
+      files:
+        - path: fonts/FlandersArtSans-Regular.woff
+          weight: 400
+          style: normal
+        - path: fonts/FlandersArtSans-Regular.ttf
+          weight: 400
+          style: normal
+
+  base:
+    family: Flanders Art Sans
+    weight: 400
+    size: 14px
+
+  headings:
+    family: Flanders Art Sans
+    color: purple
+
+  link:
+    color: blue
+    decoration: underline
