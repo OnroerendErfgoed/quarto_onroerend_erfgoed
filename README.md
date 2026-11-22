@@ -109,7 +109,8 @@ website:
 _extensions/onroerenderfgoed/onroerend-erfgoed/
 ├── _extension.yml   # metadata voor het onroerend-erfgoed-html formaat
 ├── _brand.yml       # logo, merkkleuren, typografie en fonts (Flanders Art Sans)
-├── theme.scss       # bootstrap variable overrides en custom CSS regels
+├── theme.scss       # afmetingen/layout en custom CSS regels (kleuren komen
+│                    #   uit _brand.yml als $brand-* Sass variabelen)
 ├── logo.svg         # Onroerend Erfgoed logo
 ├── favicon.ico      # Onroerend Erfgoed favicon
 └── fonts/           # Flanders Art Sans Regular (woff, ttf, eot, svg)

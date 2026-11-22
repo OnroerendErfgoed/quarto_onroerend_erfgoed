@@ -1,3 +1,17 @@
+# v1.2.0
+
+ - theme.scss bevat geen hardgecodeerde kleuren meer; `_brand.yml` is de
+   enige bron van waarheid voor de merkkleuren:
+   - semantische kleuren en typografie sturen automatisch de
+     Bootstrap-basisvariabelen (bodykleuren, linkkleur, kopkleur, lettertype)
+   - Quarto-specifieke variabelen ($toc-color, $navbar-bg,
+     $callout-color-note, ...) worden via defaults.bootstrap.defaults aan
+     de paletkleuren gekoppeld
+   - de scss:rules sectie gebruikt de $brand-* Sass variabelen van
+     het palet
+ - Bootstrap utility-kleuren "blue" en "purple" volgen nu de merkkleuren
+   (voorheen de Bootstrap-standaardwaarden)
+
 # v1.1.0
 
  - Vulp `_brand.yml` aan met de merkkleuren (paars, blauw, grijstinten) en

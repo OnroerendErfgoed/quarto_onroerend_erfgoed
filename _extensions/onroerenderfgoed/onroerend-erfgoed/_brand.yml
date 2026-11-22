@@ -29,6 +29,25 @@ color:
   info: blue
   light: white
 
+# Quarto/Bootstrap variables that need a specific brand color (Quarto maps
+# body-bg, body-color, link-color etc. automatically from the semantic
+# colors, but toc, navbar, callout and tab colors are wired here).
+defaults:
+  bootstrap:
+    defaults:
+      callout-color-note: $brand-purple
+      toc-color: $brand-purple
+      toc-active-border: $brand-purple
+      # Hover color the old theme.scss derived as darken($link-color, 15%);
+      # keep it identical instead of Bootstrap's default link-hover shift.
+      link-hover-color: darken($link-color, 15%)
+      navbar-bg: $brand-purple
+      navbar-fg: $brand-white
+      navbar-hl: $brand-white
+      navbar-brand-bg: $brand-gray-light
+      nav-tabs-link-active-color: $brand-purple
+      input-bg: $brand-white
+
 typography:
   fonts:
     - family: Flanders Art Sans
