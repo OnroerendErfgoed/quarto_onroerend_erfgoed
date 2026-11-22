@@ -229,3 +229,10 @@ ul.pagination li.disabled a {
 #quarto-dashboard-header {
   display: none;
 }
+
+// Quarto renders section numbers in .header-section-number spans styled
+// with the secondary (grey) body color; make them take on their heading's
+// colour (brand purple, or whatever the headings colour is set to).
+.header-section-number {
+  color: inherit;
+}

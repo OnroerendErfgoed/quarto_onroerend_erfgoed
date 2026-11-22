@@ -11,6 +11,8 @@
      het palet
  - Bootstrap utility-kleuren "blue" en "purple" volgen nu de merkkleuren
    (voorheen de Bootstrap-standaardwaarden)
+ - Sectienummers (.header-section-number) krijgen dezelfde kleur als
+   hun kop in plaats van de grijze body-kleur
 
 # v1.1.0
 
